@@ -14,6 +14,8 @@ async function listenerFactory() {
             return new BnQListener(new Gallery());
         case 'www.screwfix.com':
             return new ScewfixListener(new Gallery());
+        case 'www.wickes.co.uk':
+            return new WickesListener(new Gallery());
         default:
             return null;
     }
