@@ -13,6 +13,7 @@ Zoomify is a lightweight Chrome extension designed to enhance your browsing expe
 ### Supported Websites:
 - B&Q
 - Screwfix
+- Wickes
 
 ### Contributions:
 Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub.
