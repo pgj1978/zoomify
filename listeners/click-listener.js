@@ -1,5 +1,3 @@
-
-
 class ClickListener {
     clickListender;
     gallery = null;

@@ -1,5 +1,3 @@
-
-
 class BnQListener extends ClickListener {
     constructor(gallery) { super(gallery); }
 
