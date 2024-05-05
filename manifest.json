@@ -5,25 +5,29 @@
   "manifest_version": 3,
   "permissions": [
     "activeTab"
-  ], 
+  ],
   "web_accessible_resources": [
     {
-      "resources": [ "./listeners/screwfix.js" ],
-      "matches": [  ]
-    } 
+      "resources": [
+        "./listeners/screwfix.js"
+      ],
+      "matches": []
+    }
   ],
   "content_scripts": [
     {
       "matches": [
         "https://www.diy.com/*",
         "https://www.screwfix.com/*",
-        "https://www.wickes.co.uk/*"
+        "https://www.wickes.co.uk/*",
+        "https://www.victorianplumbing.co.uk/*"
       ],
       "js": [
         "listeners/click-listener.js",
         "listeners/screwfix.js",
         "listeners/bnq.js",
         "listeners/wickes.js",
+        "listeners/victorian-plumbing.js",
         "content.js"
       ],
       "css": [

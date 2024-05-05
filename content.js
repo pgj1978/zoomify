@@ -16,6 +16,8 @@ async function listenerFactory() {
             return new ScewfixListener(new Gallery());
         case 'www.wickes.co.uk':
             return new WickesListener(new Gallery());
+        case 'www.victorianplumbing.co.uk':
+            return new VictorianPlumbingListener(new Gallery());
         default:
             return null;
     }
@@ -29,7 +31,7 @@ class Gallery {
     constructor() {
         this.galleryContainer = document.createElement('div');
         this.galleryContainer.classList.add('gallery-container');
-        this.galleryContainer.addEventListener('click', () => {
+        this.galleryContainer.addEventListener('click', (event) => {
             if (this.galleryContainer) {
                 document.body.removeChild(this.galleryContainer);
             }

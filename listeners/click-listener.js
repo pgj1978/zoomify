@@ -6,7 +6,8 @@ class ClickListener {
 
     constructor(gallery) {
         this.gallery = gallery;
-        this.clickListender = document.addEventListener('click', async (event) => {
+        this.clickListender = document.addEventListener('click', async (event) => { 
+
             const clickedElement = event.target;
 
             let willZoom = this.getIsZoomable(clickedElement);
